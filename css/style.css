@@ -1,0 +1,101 @@
+:root {
+    --red: #df473a;
+    --yellow: #fff8ce;
+    --bg1: #f5eedc;
+    --bg2: #f9f5ea;
+    --gray1: #66635e;
+    --gray2: #5c5954;
+    --gray3: #413e39;
+    --green: #999e03;
+    --textColor: #762931;
+    --font1: 'PT Sans', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --client1: 'Caveat', cursive;
+    --client2: 'Courier Prime', monospace;
+    --client3: 'Oooh Baby', cursive;
+    --client4: 'Qwitcher Gryen', cursive;
+    --grad: linear-gradient(#f86659, var(--red));
+}
+
+*{box-sizing: border-box}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+    scroll-behavior: smooth;
+}
+
+.blurb {
+    color: var(--textColor);
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.figure-heading {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.fs1-heading {
+    color: var(--textColor);
+}
+
+.fs1-subheading {
+    color: var(--green)
+}
+
+.icons {
+    color: var(--green);
+    font-size: 1,5;
+}
+
+.main-nav-link {
+    color: var(--yellow);
+}
+
+.main-nav-link:hover {
+    padding: 8px 14px;
+    color: #000;
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+
+.my-figure {
+    background-color: #fff;
+    box-shadow: 0 5px 5px #aaa;
+}
+
+.small-text {
+    font-size: 1rem;
+}
+
+.social-link {
+    color: var(--yellow);
+}
+
+#figureSection {
+    padding: 32px 0;
+    background-color: var(--bg1);
+}
+
+#footerSection1 {
+    padding: 32px 0;
+    background-color: var(--bg2);
+}
+
+#headerSection1 {
+    background-color: red;
+}
+
+#headerSection2 {
+    padding: 20px 0;
+    background-color: var(--red);
+    background-image: var(--grad);
+}
+
+#headerSection3 {
+    padding: 10px 0;
+    background-color: var(--yellow);
+}
