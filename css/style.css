@@ -32,6 +32,10 @@ body {
     font-weight: 200;
 }
 
+.carousel-img {
+    height: 45vh;
+}
+
 .figure-heading {
     margin: 0;
     font-size: 1rem;
@@ -43,12 +47,21 @@ body {
 }
 
 .fs1-subheading {
-    color: var(--green)
+    color: var(--green);
+}
+
+.fs3-heading {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.fs3-list li, .fs3-text {
+    color: #aaa
 }
 
 .icons {
     color: var(--green);
-    font-size: 1,5;
+    font-size: 1.5rem;
 }
 
 .main-nav-link {
@@ -75,6 +88,44 @@ body {
     color: var(--yellow);
 }
 
+.tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: #000;
+    opacity: 0.60;
+}
+
+#carouselSection {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background-color: url('//images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg')
+    
+}
+
+#client1 {
+    font-family: var(--client1);
+}
+
+#client2 {
+    font-family: var(--client2)
+}
+
+#client3 {
+    font-family: var(--client3);
+}
+
+#client4 {
+    font-family: var(--client4);
+}
+
+#client5 {
+    font-family: var(--client1);
+}
+
 #figureSection {
     padding: 32px 0;
     background-color: var(--bg1);
@@ -83,6 +134,22 @@ body {
 #footerSection1 {
     padding: 32px 0;
     background-color: var(--bg2);
+}
+
+#footerSection2 {
+    padding: 32px 0;
+    color: var(--yellow);
+    background-color: var(--gray1);
+}
+
+#footerSection3 {
+    padding: 32px 0;
+    background-color: var(--gray2);
+}
+
+#footerSection4 {
+    padding: 32px 0;
+    background-color: var(--gray3)
 }
 
 #headerSection1 {
