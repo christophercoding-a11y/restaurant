@@ -3,9 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant</title>
 </head>
 <body>
+    <!--header-->
+    <header class="header"id="header">
+        <section class="section" id="headerSection1">
+            <div class="container">
+                <nav class="nav justify-content-center justify-content-md-end">
+                    <a href="#" class="nav-link social-link">
+                        <i class="bi bi-instagram"></i>
+                        <span class="visually-hidden">instagram</span>
+                    </a>
+                    <a href="#" class="nav-link social-link">
+                        <i class="bi bi-facebook"></i>
+                        <span class="visually-hidden">facebook</span>
+                    </a>
+                    <a href="#" class="nav-link social-link">
+                        <i class="bi bi-twitter"></i>
+                        <span class="visually-hidden">twitter</span>
+                    </a>
+                    <a href="#" class="nav-link social-link">
+                        <i class="bi bi-pinterest"></i>
+                        <span class="visually-hidden">pinterest</span>
+                    </a>
+                    <a href="#" class="nav-link social-link">
+                        <i class="bi bi-linkedin"></i>
+                        <span class="visually-hidden">linkedin</span>
+                    </a>
+                </nav>
+            </div>
+        </section>
+        <section class="section" id="headerSection2">
+            <div class="contanier">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h1 class="heading text-capitalize text-center text-md-start text-light">
+                            <a href="index.html" class="text-light text-decoration-none">restaurant</a>
+                        </h1>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="drop-down-div d-lg-none">
+                            <div class="dropdown text-center text-sm-end">
+                                <button class="btn dropdown-btn dropdowntoggle"
+                                type="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                                >select tab</button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">events</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">contacts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="nav d-none d-lg-flex main-nav justify-content-lg-end" id="mainNav">
+                            <a href="#" class="nav-link main-nav-link text-uppercase">about</a>
+                            <a href="#" class="nav-link main-nav-link text-uppercase">events</a>
+                            <a href="#" class="nav-link main-nav-link text-uppercase">menu</a>
+                            <a href="#" class="nav-link main-nav-link text-uppercase">gallery</a>
+                            <a href="#" class="nav-link main-nav-link text-uppercase">contacts</a>
+                            <a href="#" class="nav-link main-nav-link text-uppercase">blog</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="headerSection3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="blurb text-center text-md-start fst-italic">Top quality ingredients only in our kitchen</p>
+                    </div>
+                    <div class="col-md-3 offset-md-6">
+                        <form action="#" class="form search-form">
+                            <div class="input-group">
+                                <input type="search" class="form-control" />
+                                <label class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                    <span class="visually-hidden">search</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--main-->
+    <main class="main" id="main">
+        <section class="section" id="bannersection">
+            <div class="contanier-fluid">
+                <img src="images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="A plate of salad with mixed vegetables" class="img-fluid banner-img w-100">
+            </div>
+        </section>
+        <section class="section" id="aboutSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="about-div">
+                            <h2 class="about-heading text-danger text-uppercase fw-bold">about</h2>
+                            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor consectetur iusto aut sunt cum, omnis non harum minima esse impedit, optio, odio dolorem. Vitae nesciunt incidunt voluptate libero quisquam ex omnis dolorem minus atque necessitatibus deserunt quam, eius sint, aliquam nihil ad sit blanditiis dolor enim quas alias nostrum cumque adipisci! Mollitia velit aliquid magni illo? Nulla omnis recusandae maiores repellendus veritatis fugit distinctio quas</p>
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat enim possimus ducimus aut id est fugit repellat iste atque dicta dignissimos excepturi, amet qui repudiandae quidem obcaecati temporibus provident aperiam quisquam! Aliquam voluptatem quaerat odit voluptate neque, reprehenderit aut corporis dolor quidem quam excepturi, recusandae amet in ipsum laboriosam, totam porro inventore ea aliquid.</p>
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia odio, et ut, quod dolore, ad porro libero sit repellat atque! Dignissimos ipsum debitis dicta officia iure! Praesentium quibusdam, culpa tempore nihil illo adipisci dicta eveniet? Temporibus nobis earum assumenda possimus accusamus quae culpa laborum minus voluptatum ullam laboriosam adipisci corporis,</p>
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur nam sunt iste velit placeat reiciendis, accusamus facilis quasi? Voluptas sapiente voluptatem eos doloribus, nobis doloremque maxime in soluta molestiae at ad ratione</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="figure my-figure">
+                            <img src="images/img3.jpg"alt="A chef grinning" class="img-fluid image w-100 figure-img" />
+                            <h2 class="figure-heading text-danger text-uppercase ps-4">employment</h2>
+                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+                        </figure>
+                        <figure class="figure my-figure">
+                            <img src="images/img6.jpg"alt="A small plate of two fried spring rolls" class="img-fluid image w-100 figure-img" />
+                            <h2 class="figure-heading text-danger text-uppercase ps-4">fresh ideas</h2>
+                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <section class="section" id="footerSection1">
+            <div class="container">
+                <h2 class="fs1-heading fst-italic fw-light">Reservations and orders may be placed anytime</h2>
+                <div class="row">
+                    <div class="col-md-4 col-6">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <i class="bi bi-cup-fill icons"></i>
+                            </div>
+                            <div class="col-sm-11">
+                                <h3 class="fs1-subheading">
+                                    <span class="small-text d-block text-uppercase">offer one</span>
+                                    Lorem, ipsum dolor.
+                                </h3>
+                                <p class="fs1-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nisi explicabo voluptatum debitis, placeat illo exercitationem reprehenderit laboriosam, eum repellat rerum in id commodi voluptates officiis? Est a sed consequuntur ex, minima veritatis dicta inventore.</p>
+                                <a href="#" class="fs1-link text-danger text-decoration-none">&gt;&gt; Click here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <i class="bi bi-egg-fill icons"></i>
+                            </div>
+                            <div class="col-sm-11">
+                                    <h3 class="fs1-subheading">
+                                        <span class="small-text d-block text-uppercase">offer two</span>
+                                        Lorem, ipsum dolor.
+                                </h3>
+                                <p class="fs1-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nisi explicabo voluptatum debitis, placeat illo exercitationem reprehenderit laboriosam, eum repellat rerum in id commodi voluptates officiis? Est a sed consequuntur ex, minima veritatis dicta inventore.</p>
+                                <a href="#" class="fs1-link text-danger text-decoration-none">&gt;&gt; Click here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <i class="bi bi-heart-fill icons"></i>
+                            </div>
+                            <div class="col-sm-11">
+                                <h3 class="fs1-subheading">
+                                    <span class="small-text d-block text-uppercase">offer three</span>
+                                    Lorem, ipsum dolor.
+                                </h3>
+                                <p class="fs1-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nisi explicabo voluptatum debitis, placeat illo exercitationem reprehenderit laboriosam, eum repellat rerum in id commodi voluptates officiis? Est a sed consequuntur ex, minima veritatis dicta inventore.</p>
+                                <a href="#" class="fs1-link text-danger text-decoration-none">&gt;&gt; Click here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="footerSection2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center" id="client1">Client Logo</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-center" id="client2">Client Logo</p>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <p class="text-center" id="client3">Client Logo</p>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <p class="text-center" id="client4">Client Logo</p>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <p class="text-center" id="client5">Client Logo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="footerSection3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2 class="text-uppercase fs3-heading text-light">about us</h2>
+                        <p class="fs3-text fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate labore laborum praesentium?</p>
+                        <p class="fs3-text fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita amet sunt iure possimus consequuntur rem veritatis assumenda ex? Fuga pariatur maxime et quisquam beatae?</p>
+                        <a href="#"class="fs3-link text-light">&gt;&gt;Read more</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="text-uppercase fs3-heading text-light">our blog</h2>
+                        <ul class="list-unstyled fs3-list">
+                            <li class="fs3-text"><a href="#" class="fs3-link text-light text-decoration-none">Lorem ipsum, dolor sit</a>amet consectetur adipisicing elit. Saepe atque ex nihil laudantium distinctio, adipisci nemo eos maxime? Sed eum cum consectetur eveniet ducimus fugit.</li>
+                            <li class="fs3-text"><a href="#" class="fs3-link text-light text-decoration-none">Lorem ipsum, dolor sit</a>amet consectetur adipisicing elit. Saepe atque ex nihil laudantium distinctio, adipisci nemo eos maxime? Sed eum cum consectetur eveniet ducimus fugit.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="text-uppercase fs3-heading text-light">our flickr</h2>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="text-uppercase fs3-heading text-light">get in touch</h2>
+                        <ul class="list-unstyled address fs3-list">
+                            <li>8507 Queens Blvd</li>
+                            <li>Queens, NY 11428</li>
+                            <li>Mobile: 601-777-9311</li>
+                            <li>Telephone: 769-867-5309</li>
+                            <li>Fax: 228-222-2222</li>
+                            <li><a href="mailto:christopherjack14@gmail.com" class="fs3-link text-decoration-none text-light">Email: christopherjack14@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="footerSection4">
+            <div class="container">
+                <h2 class="footer-logo text-center text-md-start text-capitalize text-light">restaurant</h2>
+                <p class="colophon text-center text-md-start"><a class="site-link text-light" href="https://christopherwork.com" target="_blank">christopherwork</a></p>
+                <p class="text-center text-md-start"><a href="#headerSection1" class="text-light">back to Top</a></p>
+            </div>
+        </section>
+    </footer>
     
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

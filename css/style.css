@@ -26,6 +26,18 @@ body {
     scroll-behavior: smooth;
 }
 
+.about-div {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 3px 3px #aaa
+}
+
+
+
+.banner-img {
+    height: 45vh
+}
+
 .blurb {
     color: var(--textColor);
     font-size: 1.7rem;
@@ -80,6 +92,7 @@ body {
     box-shadow: 0 5px 5px #aaa;
 }
 
+
 .small-text {
     font-size: 1rem;
 }
@@ -96,6 +109,11 @@ body {
     height: 45vh;
     background-color: #000;
     opacity: 0.60;
+}
+
+#aboutSection {
+    padding: 40px 0;
+    background-color: var(--bg1);
 }
 
 #carouselSection {
