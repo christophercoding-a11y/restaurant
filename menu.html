@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
@@ -111,144 +119,98 @@
             </div>
         </section>
     </header>
+
     <!--main-->
-    <main class="main"id="main">
-        <section class="section" id="carouselSection">
-            <div class="tint">
-            </div>
+    <main class="main menu main" id="main">
+        <!--main section-->
+        <section class="section menu-section" id="menuSection">
             <div class="container">
-                <div class="carousel slide" id="cjCarousel">
-                    <div class="carousel-indicators">
-                        <button
-                            type="button"
-                            data-bs-target="#cjCarousel"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="slide 1"
-                        ></button>
-                        <button
-                            type="button"
-                            data-bs-target="#cjCarousel"
-                            data-bs-slide-to="1"
-                            aria-label="slide 2"
-                        ></button>
-                        <button
-                            type="button"
-                            data-bs-target="#cjCarousel"
-                            data-bs-slide-to="2"
-                            aria-label="slide 3"
-                        ></button>
-                        <button
-                            type="button"
-                            data-bs-target="#cjCarousel"
-                            data-bs-slide-to="3"
-                            aria-label="slide 4"
-                        ></button>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="menu-header text-capitalize">our menu</h2>
+                        <p class="menu-slogan text-capitalize">all items are made to order. we don't own a microwave!</p>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"alt="A plate of salad with mixed vegetables" class="img-fluid image d-block w-100 carousel-img" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/alan-hardman-SU1LFoeEUkk-unsplash.jpg"alt="A picture of pepperoni pizza" class="img-fluid image d-block w-100 carousel-img" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/jarett-lopez-6WHl6T-fxU0-unsplash.jpg"alt="A plate of three soft tacos" class="img-fluid image d-block w-100 carousel-img" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/krista-stucchio-2CZ0Zpuj-gU-unsplash.jpg"alt="A bowl of spaghetti" class="img-fluid image d-block w-100 carousel-img" />
-                        </div>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target=#cjCarousel
-                    data-bs-slide="prev"
-                >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target=#cjCarousel
-                    data-bs-slide="next"
-                >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target=#cjCarousel
-                    data-bs-slide="next"
-                >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target=#cjCarousel
-                    data-bs-slide="next"
-                >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-                </div>
-            </section>
-            </div>
-            <!--carousel-->
-        <section class="section" id="figureSection">
-            <div class="container">
-                <div class="row gy-3">
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img1.jpg"alt="A neon sign reading Open 24 hours" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">location finder</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
+                <div class=" row row-cols-1 row-cols-md-3 row-cols-lg-4" id="itemDiv">
+                    <!-- <div class="col">
+                        <figure class="figure item-figure">
+                            <img src="https://via.placeholder.com/150x90"alt="placeholder img" class="img-fluid image item-image figure-img" />
+                            <figcaption class="figure-caption item-caption">
+                                <span class="item-price" id="itemPrice">10.00</span>
+                            </figcaption>
+                            <p class="item-desc" id="itemDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <button class="btn menu text-capitalize" id="menuBtn">add to cart</button>
                         </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img2.jpg"alt="An image of a cheesburger with lettuce and tomato on fries" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">food quality & menu</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img3.jpg"alt="A chef grinning" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">employment</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img4.jpg"alt="A nice line green drink" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">our story</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img5.jpg"alt="A lime martini on the rocks" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">promotions</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img6.jpg"alt="A small plate of two fried spring rolls" class="img-fluid image w-100 figure-img" />
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">fresh ideas</h2>
-                            <figcaption class="figure-caption ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
+        <section class="section checkout-page d-none" id="checkoutPage">
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="bar-text">
+                                <span class="home-switch">Home</span> &gt; Checkout
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section checkout-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">checkout</h2>
+                            <p class="checkout-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sapiente hic debitis!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkout-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table" id="table">
+                                <tr class="table-headers">
+                                    <td>item</td>
+                                    <td>price</td>
+                                    <td>quantity</td>
+                                    <td>subtotal</td>
+                                </tr>
+                                <!--load items-->
+                                <tbody id="tbody"></tbody>
+                                <tr class="totals" id="totals">
+                                    <td colspan="4">
+                                        <p class="total-subtotal" id="totalSubtotal">Subtotal:</p>
+                                        <p class="total-tax" id="totalTax">Tax:</p>
+                                        <p class="delivery-fee" id="deliveryFee">Delivery Fee:</p>
+                                        <p class="total-total" id="totalTotal">Total:</p>
+                                    </td>
+                                    <td class="total-values" id="totalValues">
+                                        <p class="subtotal-value" id="subtotalValue">0.00</p>
+                                        <p class="tax-value" id="taxValue">0.00</p>
+                                        <p class="delivery-fee-value" id="deliveryValue">0.00</p>
+                                        <p class="total-value">$
+                                            <span id="totalValue"></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn confirm-btn text-capitalize" id="confirmBtn">confirm order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
     </main>
+
     <!--footer-->
     <footer class="footer" id="footer">
         <section class="section" id="footerSection1">
@@ -368,6 +330,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    
+    <script src="js/app.js"></script>
 </body>
 </html>
