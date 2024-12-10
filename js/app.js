@@ -1,10 +1,15 @@
 class Store {
     constructor() {
 
-        // track how many items are in thr cart and the subtotal of the items
+        // track how many items are in the cart and the subtotal of the items
         this.itemsInCart = {
             itemCount: 0,
-            subtotal: 0
+            price: 0,
+            subtotal: 0,
+            subTimesQty: 0,
+            tax: 0,
+            deliveryFee: 6,
+            total: 0
         }
 
         this.menu = {
@@ -89,6 +94,9 @@ class Store {
         this.loadItems()
         this.addtoCart()
         this.checkout()
+        this.homeSwitch()
+        this.confirmOrder()
+        
     }
 
     loadItems() {
@@ -109,7 +117,7 @@ class Store {
             
             product.innerHTML = `
             <figure class="figure item-figure">
-                <img src="${item.imgUrl}"alt="${item.alt}" class="img-fluid image item-image figure-img" />
+                <img src="images/${item.imgUrl}"alt="${item.alt}" class="img-fluid image item-image figure-img" />
                 <figcaption class="figure-caption item-caption">${item.dish}
                         <span class="item-price" id="itemPrice">${item.price}</span>
                 </figcaption>
@@ -125,16 +133,10 @@ class Store {
         const menuButtons = document.querySelectorAll('.menu-btn')
         const cartItems = document.getElementById('cartItems')
         const cartSubtotal = document.getElementById('cartSubtotal')
-        let price = 0
-
-        let subTimesQty = 0
         const subtotalValue = document.getElementById('subtotalValue')
         const taxValue = document.getElementById('taxValue')
-        let tax = 0
         const deliveryValue = document.getElementById('deliveryValue')
         const checkoutItemCount = document.getElementById('checkoutItemCount')
-        let deliveryFee = 6
-        let total = 0
         let taxRate = .07
         const totalValue = document.getElementById('totalValue')
 
@@ -147,23 +149,23 @@ class Store {
                 button.addEventListener('click', ()=> {
                     if (button.dataset['id'] == item.id) {
                         this.itemsInCart.itemCount++
-                        price+= item.price
-                        this.itemsInCart.subtotal = price
+                        this.itemsInCart.price+= item.price
+                        this.itemsInCart.subtotal = this.itemsInCart.price
 
                         item.qty++
 
-                        subTimesQty = (item.price * item.qty).toFixed(2)
-                        tax = this.itemsInCart.subtotal * taxRate
-                        total = (this.itemsInCart.subtotal + tax + deliveryFee).toFixed(2)
+                        this.itemsInCart.subTimesQty = (item.price * item.qty).toFixed(2)
+                        this.itemsInCart.tax = this.itemsInCart.subtotal * taxRate
+                        this.itemsInCart.total = (this.itemsInCart.subtotal + this.itemsInCart.tax + this.itemsInCart.deliveryFee).toFixed(2)
                     }
 
                     // send to DOM
                     cartItems.innerText = this.itemsInCart.itemCount
-                    cartSubtotal.innerText = price.toFixed(2)
+                    cartSubtotal.innerText = this.itemsInCart.price.toFixed(2)
                     subtotalValue.innerText = this.itemsInCart.subtotal.toFixed(2)
-                    deliveryValue.innerText = deliveryFee.toFixed(2)
-                    taxValue.innerText = tax.toFixed(2)
-                    totalValue.innerText = total
+                    deliveryValue.innerText = this.itemsInCart.deliveryFee.toFixed(2)
+                    taxValue.innerText = this.itemsInCart.tax.toFixed(2)
+                    totalValue.innerText = this.itemsInCart.total
 
                     // if (this.itemsInCart.itemCount == 1) {
                     //     checkoutItemCount.innerText = `${this.itemsInCart.itemCount} item`
@@ -206,7 +208,7 @@ class Store {
 
                     tableBody.innerHTML+= `
                         <td id="itemImg">
-                            <img src="${item.img}" alt="${item.alt}" class="img-fluid item-img" />
+                            <img src="images/${item.imgUrl}" alt="${item.alt}" class="img-fluid item-img" />
                         </td>
                         <td class="unit-price">${item.price.toFixed(2)}</td>
                         <td class="item-quantity">${item.qty}</td>
@@ -215,6 +217,58 @@ class Store {
 
                     tableBody.appendChild(tableRow)
                 }
+            }
+        })
+    }
+
+    homeSwitch() {
+        const homeSwitch = document.querySelector('.home-switch')
+        const checkoutPage = document.getElementById('checkoutPage')
+        const menuSection = document.getElementById('menuSection')
+
+        homeSwitch.style.cursor = 'pointer'
+
+        homeSwitch.addEventListener('click', ()=> {
+            // console.log('clicked')
+            menuSection.classList.remove('d-none')
+            checkoutPage.classList.add('d-none')
+
+            const tableBody = document.getElementById('tbody')
+            tableBody.innerHTML = ''
+        })
+    }
+
+    confirmOrder() {
+        const confirmBtn = document.getElementById('confirmBtn')
+        const tableBody = document.getElementById('tbody')
+        const cartItems = document.getElementById('cartItems')
+        const cartSubtotal = document.getElementById('cartSubtotal')
+        const subtotalValue = document.getElementById('subtotalValue')
+        const taxValue = document.getElementById('taxValue')
+        const totalValue = document.getElementById('totalValue')
+
+        confirmBtn.addEventListener('click', ()=> {
+            // this.itemsInCart.itemCount = 0
+            // this.itemsInCart.subtotal = 0
+            for (const key in this.itemsInCart) {
+                if (key != 'deliveryFee') {
+                    this.itemsInCart[key] = 0
+                }
+            }
+
+
+            tableBody.innerHTML = '<h2>Your order is confirmed</h2>'
+
+            cartItems.innerText = this.itemsInCart.itemCount
+            cartSubtotal.innerText = this.itemsInCart.subtotal.toFixed(2)
+            // subtotalValue.innerText = 0
+            // taxValue.innerText = 0
+            // totalValue.innerText = 0
+
+            for (const key in this.menu) {
+                const item = this.menu[key]
+
+                item.qty = 0
             }
         })
     }
