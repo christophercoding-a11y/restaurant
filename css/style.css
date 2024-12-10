@@ -32,6 +32,19 @@ body {
     box-shadow: 0 3px 3px #aaa
 }
 
+.menu-btn {
+    color: #fff;
+    background-color:var(--red)
+}
+
+.confirm-btn {
+    color: #fff;
+    background-color: var(--red);
+}
+
+.checkout-section, .menu-section {
+    padding: 20px 0;
+}
 
 .banner-img {
     height: 45vh
@@ -73,6 +86,19 @@ body {
 .icons {
     color: var(--green);
     font-size: 1.5rem;
+}
+
+.item-caption {
+    color: var(--red);
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.item-desc {
+    color: var(--gray1)
+}
+
+.item-image {
+    width: 70%;
 }
 
 .main-nav-link {

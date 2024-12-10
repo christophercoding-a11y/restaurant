@@ -17,7 +17,7 @@ class Store {
             item1: {
                 id: 1,
                 dish: 'spaghetti and meatballs',
-                imgUrl: 'spaghettiandmeatballs.jpeg',
+                imgUrl: 'spagehettiandmeatballs.jpeg',
                 alt: 'spaghettil and meatballs',
                 desc: 'spagehett with tomato sauce and meatballs',
                 price: 9.99,
@@ -26,16 +26,16 @@ class Store {
             item2: {
                 id: 2,
                 dish: 'cheeseburger',
-                imgUrl: 'cheeseburger.jpeg',
+                imgUrl: 'cheeseburgerwithfries.jpeg',
                 alt: 'cheeseburger',
-                desc: 'delicious burger with your choice of cheese. Comes with lettuce, pickles, tomato, and onion. Also comes with fries on the side.',
+                desc: 'delicious burger with fries with your choice of cheese. Comes with lettuce, pickles, tomato, and onion. Also comes with fries on the side.',
                 price: 14.99,
                 qty: 0
             },
             item3: {
                 id: 3,
                 dish: 'chicken and waffles',
-                imgUrl: 'chicken_and_waffles.jpeg',
+                imgUrl: 'chickenandwaffles.jpeg',
                 alt: 'chicken and waffles',
                 desc: 'fried chicken beast with waffles on the side',
                 price: 7.99,
@@ -56,22 +56,22 @@ class Store {
                 imgUrl: 'chickentetrazzini.jpeg',
                 alt: 'chicken tetrazzini',
                 desc: 'Fresh chicken tetrazzini',
-                price: '10.99',
+                price: 10.99,
                 qty: 0
             },
             item6: {
                 id: 6,
-                dish: 'shrimp tetrazzini',
-                imgUrl: 'shrimptetrazzini.jpeg',
-                alt: 'shrimp tetrazzini',
+                dish: 'shrimp alfredo',
+                imgUrl: 'shrimpalfredo.jpeg',
+                alt: 'shrimp alfredo',
                 desc: 'Fresh shrimp tetrazzini',
-                price: '10.99',
+                price: 10.99,
                 qty: 0
             },
             item7: {
                 id: 7,
                 dish: 'fried catfish',
-                imgUrl: 'fried catfish.jpeg',
+                imgUrl: 'friedcatfish.jpeg',
                 alt: 'fried catfish',
                 desc: 'deep fried catfish',
                 price: 7.99,
